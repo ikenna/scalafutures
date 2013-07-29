@@ -1,5 +1,5 @@
-import scala.actors.Futures._
-import scala.actors.Future
+import scala.concurrent.{ExecutionContext, Future, future}
+import ExecutionContext.Implicits.global
 
 object MyAopp {
 
@@ -42,6 +42,6 @@ object App2 {
     }
 
     results.foreach(future =>
-      println("result: " + future()))
+      println("result: " + future))
   }
 }
