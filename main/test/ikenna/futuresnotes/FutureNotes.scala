@@ -37,7 +37,7 @@ class AccessingFutureResults extends FunSuite {
   }
 
   test("Access the result of a future with a blocking call")
-  val future2 = Future(42)
+  val future2 = Future(42)             // continue here
   Await.result(future2, 3 seconds)
   assert(future2.isInstanceOf[Future[Int]])
 
