@@ -22,8 +22,8 @@ Key points in this tutorial:
 References
 -------------
 
-[The Neophyte’s Guide to Scala Part 8: Welcome to the Future] (http://danielwestheide.com/blog/2013/01/09/the-neophytes-guide-to-scala-part-8-welcome-to-the-future.html)
+"The Neophyte’s Guide to Scala Part 8: Welcome to the Future" by Daniel Westheide [http://danielwestheide.com/blog/2013/01/09/the-neophytes-guide-to-scala-part-8-welcome-to-the-future.html)]
 
-[Futures and Promises] by Philipp Haller et al (http://docs.scala-lang.org/overviews/core/futures.html)
+"Futures and Promises" by Philipp Haller et al [http://docs.scala-lang.org/overviews/core/futures.html]
 
-[Asynchronous IO in Scala with futures - StackOverFlow question] - see Heather Millers Answer (http://stackoverflow.com/questions/13097754/asynchronous-io-in-scala-with-futures)
+"Multithreading - Asynchronous IO in Scala with futures - Stack Over Flow" - see Heather Millers answer to the question [http://stackoverflow.com/questions/13097754/asynchronous-io-in-scala-with-futures]
