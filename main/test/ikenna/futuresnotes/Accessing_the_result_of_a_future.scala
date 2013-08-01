@@ -9,7 +9,9 @@ class Accessing_the_result_of_a_future extends FunSuite {
 
 
   test("Accessing the result of a future via a callback ") {
-    //Defining Future and what it should do
+    /**
+     * Its important to note the computation of a Future occurs in a different Thread. This example helps illustrate that
+     */
     val future4: Future[Int] = future {
         printf("Making the future's thread '%s' sleep \n", Thread.currentThread.getName)
         Thread.sleep(100)
@@ -36,7 +38,7 @@ class Accessing_the_result_of_a_future extends FunSuite {
   }
 
   test("Access the result of a future with a blocking call") {
-    val aFuture: Future[Int] = future { Thread.sleep(100);  42 }
+    val aFuture: Future[Int] = future { throw new RuntimeException(); Thread.sleep(100);  42 }
 
     aFuture onSuccess {
       case result: Int => result
