@@ -4,9 +4,9 @@
 
 ## What is a Future ?
 
-* A Future is a reference to the result of an asynchronous computation. In other words, a placeholder for a value that will be available at some point in future, as a result of some concurrent computation.
-* When would you use a Future ? If you had several computations you would like to occur asynchronously or parallelize, you may want to ceate a Future to perform them.
-* Note: The computation the Future will carry out will occur in another thread to the one that created the Future.
+* A Future is a reference to the result of an asynchronous computation. Its an object that is a placeholder for a value that will be available at some point in time.
+* When would you use a Future ? If you had several computations you would like to occur asynchronously or concurrently, you may want to ceate a Future to perform them.
+* Note: The computation the future does will will occur in different thread to the one that created the future.
 
 
 ## What is a Promise
