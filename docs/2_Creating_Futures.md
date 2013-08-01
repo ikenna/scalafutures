@@ -1,8 +1,8 @@
 
 #Introduction to Scala Futures and Promises
-(Part 1)
+(Part 2)
 
-# How can I create a Future ?
+## How are Futures created ?
 
 In 3 ways :
 
