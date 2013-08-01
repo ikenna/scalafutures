@@ -51,6 +51,12 @@ These 3 methods are shown in the example below
 
 ```
 
+In the above example, note that we need to define an ExecutionContext (line 10). We can't create a Future without this.
 
-In the above examples, note that we need to define an ExecutionContext (line 10).
-You can think of it as a Java ExecutorService or Threadpool - it is the thing that creates and manages the thread that the future runs in.
+Also note that we just create a Future, we don't do anything with it.
+
+How do we get the result of a Future ?
+
+[Next >>> Accessing the result of a Future](https://github.com/ikenna/scalafutures/blob/master/docs/2_Creating_Futures.md)
+
+
