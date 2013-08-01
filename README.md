@@ -2,12 +2,10 @@ scalafutures
 ============
 
 
-What is a Future?
+An Introduction to Scala Futures
 -------------
 
-* a reference to the result of an asynchronous computation. In other words, a placeholder for a value that will be available at some point in future, as a result of some concurrent computation.
-
-* where introduced in Scala 2.10.0
+* A Future a reference to the result of an asynchronous computation. In other words, a placeholder for a value that will be available at some point in future, as a result of some concurrent computation.
 
 Key points in this tutorial:
 
