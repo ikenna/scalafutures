@@ -19,10 +19,6 @@ class Accessing_the_result_of_a_future extends FunSuite {
         42
     }
 
-    // Defining call back
-    future4 onSuccess {
-      case result: Int => printf("Result was '%s' \n", result)
-    }
 
     printf("Sleeping '%s' thread \n", Thread.currentThread.getName)
     Thread.sleep(200)
@@ -33,7 +29,6 @@ class Accessing_the_result_of_a_future extends FunSuite {
      * Making the future's thread 'ForkJoinPool-1-worker-1' sleep
      * Sleeping 'main' thread
      * Waking thread 'ForkJoinPool-1-worker-1' and returning 42
-     * Result was '42'
      */
   }
 
