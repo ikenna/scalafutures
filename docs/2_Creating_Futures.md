@@ -1,7 +1,10 @@
 
-# Creating Futures
+#Introduction to Scala Futures and Promises
+(Part 1)
 
-* You can create a Future in 3 ways :
+# How can I create a Future ?
+
+In 3 ways :
 
 1. Using the scala.concurrent.future{} function
 
@@ -12,5 +15,5 @@
 These 3 methods are shown in the example below
 
 
-* In the above examples, note that we need to define an ExecutionContext (line 10).
+In the above examples, note that we need to define an ExecutionContext (line 10).
 You can think of it as a Java ExecutorService or Threadpool - it is the thing that creates and manages the thread that the future runs in.
