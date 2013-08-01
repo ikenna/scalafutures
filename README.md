@@ -9,7 +9,7 @@ An Introduction to Scala Futures
 
 Key points in this tutorial:
 
-1. How to create Futures
+1. [How to create Futures](https://github.com/ikenna/scalafutures/blob/master/main/test/ikenna/futuresnotes/How_to_create_futures.scala)
 2. How to define Callbacks on Futures (non-blocking result retrieval)
 3. How Futures work with For-Comprehensions
 4. Accessing the result Scala Futures using Await (blocking result retrieval). Specifying Duration
