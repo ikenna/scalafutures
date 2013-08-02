@@ -1,5 +1,10 @@
 
-# Accessing the result of a Future by blocking
+
+
+#Introduction to Scala Futures and Promises# Accessing the result of a Future by blocking
+(Part 3)
+
+## Waiting for a future to complete by blocking the main thread
 
 When the main thread of an application creates a future, it is possible for it to complete before the thread running the future executes the future's computation.
 
@@ -85,6 +90,14 @@ will return the *result* of the completed future (in this case, Int)
     Await.ready(aFuture, Duration("200 millisecond"))
 
 will return the completed future (in this case Future(Int) )
+
+
+However, blocking a Future to get its result is discouraged. For scalability you probably want futures to execute aysnchronously.
+It is better to define callbacks on Futures - behaviour that will execute if a future succeeds or fails.
+
+Lets look at this next.
+
+[Next >>> Specifying Callbacks on futures]()
 
 
 
