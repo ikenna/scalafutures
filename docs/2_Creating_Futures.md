@@ -55,5 +55,5 @@ In the above example, note that we need to define an ExecutionContext (line 10).
 
 Also note that we just create a Future, we don't do anything with it. So how do we get the result of a Future ? This leads us to the next section -
 
-[Next >>> Accessing the result of a Future](https://github.com/ikenna/scalafutures/blob/master/docs/3_Accessing_The_Result_Of_A_Future_By_Blocking.md)
+**[Next >>> Accessing the result of a Future](https://github.com/ikenna/scalafutures/blob/master/docs/3_Accessing_The_Result_Of_A_Future_By_Blocking.md)**
 
