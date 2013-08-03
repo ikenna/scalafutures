@@ -2,9 +2,8 @@
 
 
 #Introduction to Scala Futures and Promises (3)
-(Part 3)
 
-## Waiting for a future to complete by blocking the main thread
+## Accessing the result of a Future by blocking
 
 When the main thread of an application creates a future, it is possible for it to complete before the thread running the future executes the future's computation.
 
