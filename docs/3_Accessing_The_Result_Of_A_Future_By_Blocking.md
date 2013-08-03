@@ -92,6 +92,8 @@ Lets look at callbacks next.
 
 **[Next >>> Specifying Callbacks on futures](https://github.com/ikenna/scalafutures/blob/master/docs/4_Callbacks_on_futures.md)**
 
+**[Previous <<< Creating a Future](https://github.com/ikenna/scalafutures/blob/master/docs/2_Creating_Futures.md)**
+
 ### References
 
 1.  [Futures and Promises by Philipp Haller et al](http://docs.scala-lang.org/overviews/core/futures.html)
