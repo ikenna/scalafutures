@@ -1,7 +1,7 @@
 
 
 
-#Introduction to Scala Futures and Promises# Accessing the result of a Future by blocking
+#Introduction to Scala Futures and Promises (3)
 (Part 3)
 
 ## Waiting for a future to complete by blocking the main thread

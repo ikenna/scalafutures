@@ -2,9 +2,9 @@
 #Introduction to Scala Futures and Promises (2)
 
 
-## How are Futures created ?
+## Creating Futures
 
-In 3 ways :
+Futures are created in 3 ways :
 
 1. Using the `scala.concurrent.future{}` function
 
