@@ -12,7 +12,7 @@ Futures are created in 3 ways :
 
 3. Creating a Promise, and referring to its associated Future.
 
-These 3 methods are shown in the example below
+These 3 methods are shown in the example below ([Or see the src](https://github.com/ikenna/scalafutures/blob/master/main/test/ikenna/futuresnotes/How_to_create_futures.scala))
 
 ```
    package ikenna.futuresnotes
