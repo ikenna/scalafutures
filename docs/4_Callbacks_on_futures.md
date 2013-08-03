@@ -93,7 +93,7 @@ Callbacks are one big difference Scala Futures have from Java Futures. Lets look
 ## Footnote
 
 1. The ExecutionContext.Implicits.global context we would normally import creates an ExecutionContext that uses a ForkJoinFramework.
-By default, this ForkJoinFrameWork runs Futures in a daemon Thread (1). Now the JVM will not shutdown if a normal thread is running, but it can shutdown if a daemon thread is still running (2).
+By default, this ForkJoinFrameWork runs Futures in a daemon Thread [1]. Now the JVM will not shutdown if a normal thread is running, but it can shutdown if a daemon thread is still running [2].
 If we used the ExecutionContext.Implicits.global, it would run our Futures code in a daemon thread and in our example, the JVM  can exit before the Future completes.
 To prevent this, we create our own ExecutionContext from a ThreadPoolExecutor, that runs the Future normal (non-daemon) threads.
 
