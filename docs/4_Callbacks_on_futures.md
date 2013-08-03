@@ -1,24 +1,24 @@
 
-#Introduction to Scala Futures and Promises
-(Part 4)
+#Introduction to Scala Futures and Promises (4)
 
-## Specifying Callbacks on Futures?
+## Specifying Callbacks on Futures
 
 A future can either
 
-1. execute without any problems . In this case the Future completes with a Success
+1. execute successfully. In this case the Future completes with a result of type `scala.util.Success` (which is a subtype of `scala.util.Try`)
 
 or
 
-2. throw an exception.  In this case the Future completes with a Failure
+2. throw an exception.  In this case the Future completes with a result of type `scala.util.Failure` (also a subtype of `scala.util.Try`)
+
 
 There are 3 callbacks you can specify on Futures and Promises
 
-1. OnSuccess : what should happen if Future completes successfully
+1. `onSuccess` : what should happen if Future completes successfully
 
-2. OnFailure : what should happen if Future completes with a Failure
+2. `onFailure` : what should happen if Future completes with a Failure
 
-3. OnComplete : the success and failure behaviours (a combination of the above 2)
+3. `onComplete` : the success and failure behaviours (a combination of the above 2)
 
 ```
 
