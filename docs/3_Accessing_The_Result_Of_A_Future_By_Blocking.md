@@ -49,7 +49,7 @@ class Accessing_the_result_of_a_future extends FunSuite {
 
 ```
 
-Instead of blocking the main thread sleep with Thread.sleep, we can use the Await utility class to make the main thread block until the future has complted
+Instead of blocking the main thread sleep with Thread.sleep, we can use the Await utility class to make the main thread block until the future has completed
 
 
 ```
@@ -80,23 +80,21 @@ Instead of blocking the main thread sleep with Thread.sleep, we can use the Awai
 
 ```
 
-Note that
+Note that `Await.result(aFuture, Duration("200 millisecond"))` will return the *result* of the completed future (in this case, Int)
 
-    Await.result(aFuture, Duration("200 millisecond"))
-
-will return the *result* of the completed future (in this case, Int)
-
-    Await.ready(aFuture, Duration("200 millisecond"))
-
-will return the completed future (in this case Future(Int) )
+`Await.ready(aFuture, Duration("200 millisecond"))` will return the completed future (in this case Future(Int) )
 
 
-However, blocking a Future to get its result is discouraged. For scalability you probably want futures to execute aysnchronously.
+However, **blocking a Future to get its result is discouraged** [1]. This would be very much akin to synchronous code. For scalability you probably want futures to execute asynchronously.
 It is better to define callbacks on Futures - behaviour that will execute if a future succeeds or fails.
 
-Lets look at this next.
+Lets look at callbacks next.
 
 [Next >>> Specifying Callbacks on futures]()
+
+### References
+
+1.  [Futures and Promises by Philipp Haller et al](http://docs.scala-lang.org/overviews/core/futures.html)
 
 
 
