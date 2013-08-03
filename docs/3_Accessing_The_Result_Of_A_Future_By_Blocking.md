@@ -82,7 +82,7 @@ Instead of blocking the main thread sleep with Thread.sleep, we can use the Awai
 
 Note that `Await.result(aFuture, Duration("200 millisecond"))` will return the *result* of the completed future (in this case, Int)
 
-`Await.ready(aFuture, Duration("200 millisecond"))` will return the completed future (in this case Future(Int) )
+But `Await.ready(aFuture, Duration("200 millisecond"))` will return the completed future (in this case Future(Int) )
 
 
 However, **blocking a Future to get its result is discouraged** [1]. This would be very much akin to synchronous code. For scalability you probably want futures to execute asynchronously.
@@ -90,7 +90,7 @@ It is better to define callbacks on Futures - behaviour that will execute if a f
 
 Lets look at callbacks next.
 
-[Next >>> Specifying Callbacks on futures]()
+**[Next >>> Specifying Callbacks on futures](https://github.com/ikenna/scalafutures/blob/master/docs/4_Callbacks_on_futures.md)**
 
 ### References
 
