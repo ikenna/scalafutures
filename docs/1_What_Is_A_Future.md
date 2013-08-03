@@ -19,7 +19,8 @@
 
 * You can write to a Promise only once. But you can read its result as many times as you like.
 
-* When would you use a Promise ? You can use a Promise to pass messages between Futures. If this is confusing, don't worry - we will explain it more later with an example
+* When would you use a Promise ?
+** You can use a Promise to pass messages between Futures. If this is confusing, don't worry - we will explain it more later with an example
 
 
 [Next >>> Creating a Future](https://github.com/ikenna/scalafutures/blob/master/docs/2_Creating_Futures.md)
