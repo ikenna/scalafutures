@@ -53,10 +53,7 @@ These 3 methods are shown in the example below
 
 In the above example, note that we need to define an ExecutionContext (line 10). We can't create a Future without this.
 
-Also note that we just create a Future, we don't do anything with it.
+Also note that we just create a Future, we don't do anything with it. So how do we get the result of a Future ? This leads us to the next section -
 
-How do we get the result of a Future ?
-
-[Next >>> Accessing the result of a Future](https://github.com/ikenna/scalafutures/blob/master/docs/2_Creating_Futures.md)
-
+[Next >>> Accessing the result of a Future](https://github.com/ikenna/scalafutures/blob/master/docs/3_Accessing_The_Result_Of_A_Future_By_Blocking.md)
 
