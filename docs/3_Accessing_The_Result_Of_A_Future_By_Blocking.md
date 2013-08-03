@@ -86,7 +86,7 @@ But `Await.ready(aFuture, Duration("200 millisecond"))` will return the complete
 
 
 However, **blocking a Future to get its result is discouraged** [1]. This would be very much akin to synchronous code. For scalability you probably want futures to execute asynchronously.
-It is better to define callbacks on Futures - behaviour that will execute if a future succeeds or fails.
+It is better to define callbacks on Futures - behaviour that will execute if the Future succeeds or fails.
 
 Lets look at callbacks next.
 
