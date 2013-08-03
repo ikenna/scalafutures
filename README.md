@@ -17,6 +17,7 @@ Key points in this tutorial:
 6. [Specifying ordered side-effects for the Success or Failure of Futures]  (https://github.com/ikenna/scalafutures/blob/master/main/test/ikenna/futuresnotes/Ordering_futures_and_partial_functions.scala)
 7. [Completing a Future using Promises](https://github.com/ikenna/scalafutures/blob/master/main/test/ikenna/futuresnotes/How_does_a_Future_complete.scala)
 
+You can fork this repository and play with the example code. If you have sbt installed, running `sbt gen-idea` in the project directory with generate the intelliJ project for it.
 
 References
 -------------
