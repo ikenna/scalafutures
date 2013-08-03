@@ -100,6 +100,6 @@ To prevent this, we create our own ExecutionContext from a ThreadPoolExecutor, t
 
 ## References
 
-1. [scala/concurrent/impl/ExecutionContextImpl.createExecutorService ](https://github.com/scala/scala/blob/master/src/library/scala/concurrent/impl/ExecutionContextImpl.scala)
+1. [scala / concurrent / impl / ExecutionContextImpl . createExecutorService ](https://github.com/scala/scala/blob/master/src/library/scala/concurrent/impl/ExecutionContextImpl.scala)
 
 2. "Java Concurrency in Practice" by Tim Peierls, Brian Goetz et al, Addison-Wesley Professional, 2005
