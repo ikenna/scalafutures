@@ -87,8 +87,9 @@ object OnComplete_Callback {
 
 Callbacks are one big difference Scala Futures have from Java Futures. Lets look at this in the next section.
 
-**[Next >>> Specifying Callbacks on futures](https://github.com/ikenna/scalafutures/blob/master/docs/5_Comparing_java_and_scala_futures.md)**
+**[Next >>> Comparing Java and Scala Futures](https://github.com/ikenna/scalafutures/blob/master/docs/5_Comparing_java_and_scala_futures.md)**
 
+**[Previous <<< Accessing the result of a Future](https://github.com/ikenna/scalafutures/blob/master/docs/3_Accessing_The_Result_Of_A_Future_By_Blocking.md)**
 
 ## Footnote
 
