@@ -52,7 +52,7 @@ object OnSuccess_and_OnFailure_Callbacks {
 
 ```
 
-Note that in the above example we create our own ExecutionContext using Executors.newCachedThreadPool() (line 12),  instead of importing the ExecutionContext.Implicits.global as before. (See footnote 1)
+Note that in the above example we create our own ExecutionContext using Executors.newCachedThreadPool() (line 9),  instead of importing the ExecutionContext.Implicits.global as before. (See footnote 1)
 
 The below example shows use of the OnComplete callback ( [or view the src file](https://github.com/ikenna/scalafutures/blob/master/main/test/ikenna/futuresnotes/OnComplete_Callback.scala) )
 
