@@ -3,7 +3,7 @@
 
 ## Specifying Callbacks on Futures
 
-A future can either
+A Future can either
 
 * execute successfully. In this case the Future completes with a result wrapped by an object of type `scala.util.Success` (which is a subtype of `scala.util.Try`)
 
