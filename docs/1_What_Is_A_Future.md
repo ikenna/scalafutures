@@ -26,7 +26,7 @@
    * You can use a Promise to pass messages between Futures [1] . If this is confusing, don't worry - we will explain it more later with an example .
 
 
-[Next >>> Creating a Future](https://github.com/ikenna/scalafutures/blob/master/docs/2_Creating_Futures.md)
+*[Next >>> Creating a Future](https://github.com/ikenna/scalafutures/blob/master/docs/2_Creating_Futures.md)*
 
 
 ### References
