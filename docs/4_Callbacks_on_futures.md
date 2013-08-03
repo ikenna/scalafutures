@@ -26,7 +26,7 @@ Here is an example below to demonstrate onSuccess and onFailure ( [or view the s
 package ikenna.futuresnotes
 
 import scala.concurrent._
-import java.util.concurrent.{Executors, ScheduledThreadPoolExecutor}
+import java.util.concurrent.Executors
 
 object OnSuccess_and_OnFailure_Callbacks {
 
