@@ -1,14 +1,14 @@
 
-#Introduction to Scala Futures and Promises
-(Part 2)
+#Introduction to Scala Futures and Promises (2)
+
 
 ## How are Futures created ?
 
 In 3 ways :
 
-1. Using the scala.concurrent.future{} function
+1. Using the `scala.concurrent.future{}` function
 
-2. Using the scala.concurrent.Future() companion object
+2. Using the `scala.concurrent.Future()` companion object
 
 3. Creating a Promise, and referring to its associated Future.
 
