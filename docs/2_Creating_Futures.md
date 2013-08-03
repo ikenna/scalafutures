@@ -51,9 +51,9 @@ These 3 methods are shown in the example below
 
 ```
 
-In the above example, note that we need to define an ExecutionContext (line 10). We can't create a future without this.
+In the above example, note that we need to define an ExecutionContext (line 10). We can't create a Future without this.
 
-Also note that in the above example, we just create a futures, but don't do anything with them. So how do we get the result of a Future ? This leads us to the next section -
+Also note that in the above example, we just create a Futures, but don't do anything with them. So how do we get the result of a Future ? This leads us to the next section -
 
 **[Next >>> Accessing the result of a Future](https://github.com/ikenna/scalafutures/blob/master/docs/3_Accessing_The_Result_Of_A_Future_By_Blocking.md)**
 
