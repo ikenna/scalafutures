@@ -52,7 +52,7 @@ object OnSuccess_and_OnFailure_Callbacks {
 
 ```
 
-Note that in the above example we create our own ExecutionContext using Executors.newCachedThreadPool() (line 9),  instead of importing the ExecutionContext.Implicits.global as before. (See footnote 1)
+Note that in the above example we create our own ExecutionContext using `Executors.newCachedThreadPool()` (line 9),  instead of importing the `ExecutionContext.Implicits.global` as we did in previous examples. (See footnote 1)
 
 The below example shows use of the OnComplete callback ( [or view the src file](https://github.com/ikenna/scalafutures/blob/master/main/test/ikenna/futuresnotes/OnComplete_Callback.scala) )
 
@@ -90,4 +90,13 @@ Callbacks are one big difference Scala Futures have from Java Futures. Lets look
 **[Next >>> Specifying Callbacks on futures](https://github.com/ikenna/scalafutures/blob/master/docs/4_Callbacks_on_futures.md)**
 
 
+## Footnote
+1. The ExecutionContext.Implicits.global context we would normally import creates an ExecutionContext that uses a ForkJoinFramework.
+By default, this ForkJoinFrameWork runs Futures in a daemon Thread (1). Now the JVM will not shutdown if a normal thread is running, but it can shutdown if a daemon thread is still running (2).
+If we used the ExecutionContext.Implicits.global, it would run our Futures code in a daemon thread and in our example, the JVM  can exit before the Future completes.
+To prevent this, we create our own ExecutionContext from a ThreadPoolExecutor, that runs the Future normal (non-daemon) threads.
 
+
+## References
+1.[scala/concurrent/impl/ExecutionContextImpl.scala](https://github.com/scala/scala/blob/master/src/library/scala/concurrent/impl/ExecutionContextImpl.scala)
+2. "Java Concurrency in Practice" by Tim Peierls, Brian Goetz et al, 2005
