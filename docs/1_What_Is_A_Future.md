@@ -1,6 +1,6 @@
 
-#Introduction to Scala Futures and Promises
-(Part 1)
+#Introduction to Scala Futures and Promises (1)
+
 
 ## What is a Future ?
 
