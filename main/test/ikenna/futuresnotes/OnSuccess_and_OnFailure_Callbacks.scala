@@ -1,12 +1,12 @@
 package ikenna.futuresnotes
 
 import scala.concurrent._
-import java.util.concurrent.ScheduledThreadPoolExecutor
+import java.util.concurrent.{Executors, ScheduledThreadPoolExecutor}
 
 object OnSuccess_and_OnFailure_Callbacks {
 
   def main(args: Array[String]) {
-    implicit val executionContext = ExecutionContext.fromExecutorService(new ScheduledThreadPoolExecutor(2))
+    implicit val executionContext = ExecutionContext.fromExecutorService(Executors.newCachedThreadPool())
 
     val aFuture:Future[String] =  future{"Hello World!"} // change this to 'future{throw new RuntimeException()}' later and see what happens
 
