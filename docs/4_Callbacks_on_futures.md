@@ -5,11 +5,11 @@
 
 A future can either
 
-1. execute successfully. In this case the Future completes with a result of type `scala.util.Success` (which is a subtype of `scala.util.Try`)
+1. execute successfully. In this case the Future completes with a result wrapped by an object of type `scala.util.Success` (which is a subtype of `scala.util.Try`)
 
 or
 
-2. throw an exception.  In this case the Future completes with a result of type `scala.util.Failure` (also a subtype of `scala.util.Try`)
+2. throw an exception.  In this case the Future completes with a result wrapped by an object of type `scala.util.Failure` (also a subtype of `scala.util.Try`)
 
 
 There are 3 callbacks you can specify on Futures and Promises
