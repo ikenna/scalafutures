@@ -43,37 +43,44 @@ object OnSuccess_and_OnFailure_Callbacks {
       case exception:Throwable => println(s"onFailure : $exception")
     }
   }
+
+  /** Output:
+   * onSuccess : Hello World!
+   */
 }
+
 
 ```
 
 Note that in the above example we create our own ExecutionContext using Executors.newCachedThreadPool() (line 12),  instead of importing the ExecutionContext.Implicits.global as before. (See footnote 1)
 
 The below example shows use of the OnComplete callback ( [or view the src file](https://github.com/ikenna/scalafutures/blob/master/main/test/ikenna/futuresnotes/OnComplete_Callback.scala) )
+
 ```
-   package ikenna.futuresnotes
+package ikenna.futuresnotes
 
-   import scala.concurrent._
-   import scala.util.Failure
-   import scala.util.Success
-   import java.util.concurrent.Executors
+import scala.concurrent._
+import scala.util.Failure
+import scala.util.Success
+import java.util.concurrent.Executors
 
-   object OnComplete_Callback {
+object OnComplete_Callback {
 
+  def main(args: Array[String]) {
+    implicit val executionContext = ExecutionContext.fromExecutorService(Executors.newCachedThreadPool())
 
-     def main(args: Array[String]) {
-       implicit val executionContext = ExecutionContext.fromExecutorService(Executors.newCachedThreadPool())
+    val aFuture: Future[String] = future {"Hello World!"}
 
-       val aFuture: Future[String] = future {"Hello World!"}
+    aFuture onComplete {
+      case Success(result) => println(s"onComplete success: $result")
+      case Failure(result) => println(s"onComplete failure: $result")
+    }
+  }
 
-       aFuture onComplete {
-         case Success(result) => println(s"onComplete success: $result")
-         case Failure(result) => println(s"onComplete failure: $result")
-       }
-     }
-
-   }
-
+  /**Output:
+   * onComplete success: Hello World!
+   */
+}
 
 
 ```

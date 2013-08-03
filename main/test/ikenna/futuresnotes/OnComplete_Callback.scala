@@ -7,7 +7,6 @@ import java.util.concurrent.Executors
 
 object OnComplete_Callback {
 
-
   def main(args: Array[String]) {
     implicit val executionContext = ExecutionContext.fromExecutorService(Executors.newCachedThreadPool())
 
@@ -19,6 +18,9 @@ object OnComplete_Callback {
     }
   }
 
+  /**Output:
+   * onComplete success: Hello World!
+   */
 }
 
 

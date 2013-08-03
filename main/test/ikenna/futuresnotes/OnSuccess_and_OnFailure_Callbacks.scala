@@ -18,4 +18,8 @@ object OnSuccess_and_OnFailure_Callbacks {
       case exception:Throwable => println(s"onFailure : $exception")
     }
   }
+
+  /** Output:
+   * onSuccess : Hello World!
+   */
 }
