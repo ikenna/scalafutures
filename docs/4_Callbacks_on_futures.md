@@ -20,6 +20,8 @@ There are 3 callbacks you can specify on Futures and Promises
 
 3. `onComplete` : the success and failure behaviours (a combination of the above 2)
 
+Here is an example to demonstrate this. [or view the src file (https://github.com/ikenna/scalafutures/blob/master/main/test/ikenna/futuresnotes/Callbacks_you_can_specify_on_futures.scala)]
+
 ```
 
 package ikenna.futuresnotes
