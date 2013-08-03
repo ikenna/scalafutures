@@ -4,9 +4,11 @@
 
 ## What is a Future ?
 
-* A Future is a reference to the result of an asynchronous computation. Its an object that is a placeholder for a value that will be available at some point in time.
-* When would you use a Future ? If you had several computations you would like to occur asynchronously or concurrently, you may want to ceate a Future to perform them.
-* Note: The computation the future does will will occur in different thread to the one that created the future.
+* A Future is a reference to the result of an asynchronous computation (1). Its an object that keeps track of a concurrent computation, and can provide the result of the computation when it is complete (2).
+
+* When would you use a Future ? If you had several computations you would like to run in parallel, and access their results  at a later point. Using futures can improve performance.
+
+* Note: The Future is asynchronous because its computation is running in a different thread.
 
 
 ## What is a Promise
@@ -18,3 +20,9 @@
 
 
 [Next >>> Creating a Future](https://github.com/ikenna/scalafutures/blob/master/docs/2_Creating_Futures.md)
+
+
+References
+
+1.  [Futures and Promises by Philipp Haller et al](http://docs.scala-lang.org/overviews/core/futures.html)
+2.  Pattern-Oriented Software Architecture: A Pattern Language for Distributed Computing, 4th Volume by  Frank Buschmann  et al
