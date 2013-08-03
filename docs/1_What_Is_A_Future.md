@@ -25,7 +25,7 @@
 [Next >>> Creating a Future](https://github.com/ikenna/scalafutures/blob/master/docs/2_Creating_Futures.md)
 
 
-References
+### References
 
 1.  [Futures and Promises by Philipp Haller et al](http://docs.scala-lang.org/overviews/core/futures.html)
 2.  Pattern-Oriented Software Architecture: A Pattern Language for Distributed Computing, 4th Volume by  Frank Buschmann  et al
