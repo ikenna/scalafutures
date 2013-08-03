@@ -20,39 +20,18 @@ There are 3 callbacks you can specify on Futures and Promises
 
 3. `onComplete` : the success and failure behaviours (a combination of the above 2)
 
-Here is an example below to demonstrate this ( [or view the src file](https://github.com/ikenna/scalafutures/blob/master/main/test/ikenna/futuresnotes/Callbacks_you_can_specify_on_futures.scala) )
+Here is an example below to demonstrate onSuccess and onFailure ( [or view the src file](https://github.com/ikenna/scalafutures/blob/master/main/test/ikenna/futuresnotes/OnSuccess_and_OnFailure_Callbacks.scala) )
 
 ```
-
 package ikenna.futuresnotes
 
-import org.scalatest.FunSuite
 import scala.concurrent._
-import ExecutionContext.Implicits.global
-import scala.util.{Failure, Success}
-import scala.concurrent.duration.Duration
+import java.util.concurrent.{Executors, ScheduledThreadPoolExecutor}
 
+object OnSuccess_and_OnFailure_Callbacks {
 
-class Callbacks_you_can_specify_on_futures extends FunSuite{
-
-  test("With onComplete, we can specify the Success and Failure cases") {
-
-    val aFuture:Future[String] = future{"Hello World!"}
-
-    aFuture onComplete {
-      case Success(result) => println(s"onComplete : $result")
-      case Failure(result) => println(s"onComplete : $result")
-    }
-
-    /**Note: Success and Failure are subtypes of class Try
-      * A Try is a class used to denote an operation that ends either successfully with a value, or fails with an exception
-     */
-
-    Await.ready(aFuture, Duration("100 ms"))
-  }
-
-
-  test("Or we can specify separate callbacks for failure and success") {
+  def main(args: Array[String]) {
+    implicit val executionContext = ExecutionContext.fromExecutorService(Executors.newCachedThreadPool())
 
     val aFuture:Future[String] =  future{"Hello World!"} // change this to 'future{throw new RuntimeException()}' later and see what happens
 
@@ -63,11 +42,39 @@ class Callbacks_you_can_specify_on_futures extends FunSuite{
     aFuture onFailure   {
       case exception:Throwable => println(s"onFailure : $exception")
     }
-
-    Await.ready(aFuture, Duration("100 ms"))
   }
-
 }
+
+```
+
+Note that in the above example we create our own ExecutionContext using Executors.newCachedThreadPool() (line 12),  instead of importing the ExecutionContext.Implicits.global as before. (See footnote 1)
+
+The below example shows use of the OnComplete callback ( [or view the src file](https://github.com/ikenna/scalafutures/blob/master/main/test/ikenna/futuresnotes/OnComplete_Callback.scala) )
+```
+   package ikenna.futuresnotes
+
+   import scala.concurrent._
+   import scala.util.Failure
+   import scala.util.Success
+   import java.util.concurrent.Executors
+
+   object OnComplete_Callback {
+
+
+     def main(args: Array[String]) {
+       implicit val executionContext = ExecutionContext.fromExecutorService(Executors.newCachedThreadPool())
+
+       val aFuture: Future[String] = future {"Hello World!"}
+
+       aFuture onComplete {
+         case Success(result) => println(s"onComplete success: $result")
+         case Failure(result) => println(s"onComplete failure: $result")
+       }
+     }
+
+   }
+
+
 
 ```
 
