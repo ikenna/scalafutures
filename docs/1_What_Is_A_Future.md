@@ -6,7 +6,7 @@
 
 * A Future is a reference to the result of an asynchronous computation [1]. Its an object that keeps track of a concurrent computation, and can provide the result of the computation when it is complete [2].
 
-* When would you use a Future ? If you had several computations you would like to run in parallel, and access their results  at a later point. Using futures can improve performance.
+* When would you use a Future ? If you had several computations you would like to run in parallel, and access their results  at a later point you would use futures. Using futures can improve performance, as the computations run concurrently.
 
 * Note: The Future is asynchronous because its computation is running in a different thread.
 
