@@ -12,7 +12,7 @@ Futures are created in 3 ways :
 
 3. Creating a Promise, and referring to its associated Future.
 
-These 3 methods are shown in the example below ([Or see the src](https://github.com/ikenna/scalafutures/blob/master/main/test/ikenna/futuresnotes/How_to_create_futures.scala))
+These 3 methods are shown in the example below ([or see the src](https://github.com/ikenna/scalafutures/blob/master/main/test/ikenna/futuresnotes/How_to_create_futures.scala))
 
 ```
    package ikenna.futuresnotes
@@ -56,4 +56,6 @@ In the above example, note that we need to define an ExecutionContext (line 10).
 Also note that in the above example, we just create a Futures, but don't do anything with them. So how do we get the result of a Future ? This leads us to the next section -
 
 **[Next >>> Accessing the result of a Future](https://github.com/ikenna/scalafutures/blob/master/docs/3_Accessing_The_Result_Of_A_Future_By_Blocking.md)**
+
+**[Previous <<<  What is a Future ? ](https://github.com/ikenna/scalafutures/blob/master/docs/1_What_Is_A_Future.md)**
 
