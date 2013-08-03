@@ -11,7 +11,7 @@
 * Note: The Future is asynchronous because its computation is running in a different thread.
 
 
-## What is a Promise
+## What is a Promise ?
 
 * A Promise is a single assignment reference that can be used to complete its associated Future. [1]
 
