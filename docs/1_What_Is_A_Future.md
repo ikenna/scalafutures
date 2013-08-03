@@ -21,7 +21,7 @@
 
 * When would you use a Promise ?
 
-   * Whenever you create a Future *f* in Scala, internally you are actually creating a Promise *p* whose future is *f*. *P* is the used to complete *f* internally.
+   * Whenever you create a Future *f* in Scala, internally you are actually creating a Promise *p* whose future is *f*. *P* is the used to complete *f* internally. [3]
 
    * You can use a Promise to pass messages between Futures. If this is confusing, don't worry - we will explain it more later with an example
 
@@ -33,3 +33,4 @@
 
 1.  [Futures and Promises by Philipp Haller et al](http://docs.scala-lang.org/overviews/core/futures.html)
 2.  Pattern-Oriented Software Architecture: A Pattern Language for Distributed Computing, 4th Volume by  Frank Buschmann  et al
+3.  [ scala / src / library / scala / concurrent / impl / Future.scala ](https://github.com/scala/scala/blob/master/src/library/scala/concurrent/impl/Future.scala)
