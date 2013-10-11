@@ -1,7 +1,6 @@
-
 #Introduction to Scala Futures and Promises (4)
 
-## Specifying Callbacks on Futures
+## Accessing the result of a Future asynchronously : Specifying Callbacks on Futures
 
 A Future can either
 
