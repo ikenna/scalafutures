@@ -1,4 +1,3 @@
-
 #Introduction to Scala Futures and Promises (1)
 
 
@@ -13,7 +12,7 @@
 
 ## What is a Promise ?
 
-* A Promise is a single assignment reference that can be used to complete its associated Future. [1]
+* A Scala Promise is a single assignment reference that can be used to complete its associated Future. [1]
 
 * Creating a Promise creates its associated Future. Completing a Promise completes its associated Future.
 
