@@ -11,7 +11,7 @@ Key points in this tutorial:
 
 1. [Intro to Scala Futures and Promises](https://github.com/ikenna/scalafutures/blob/master/docs/1_What_Is_A_Future.md) 
 2. [Creating Futures](https://github.com/ikenna/scalafutures/blob/master/docs/2_Creating_Futures.md)
-3. [Accessing the result of a Future by blocking](https://github.com/ikenna/scalafutures/blob/master/docs/3_Accessing_The_Result_Of_A_Future_By_Blocking.m)
+3. [Accessing the result of a Future by blocking](https://github.com/ikenna/scalafutures/blob/master/docs/3_Accessing_The_Result_Of_A_Future_By_Blocking.md)
 4. [Specifying Callbacks on Futures](https://github.com/ikenna/scalafutures/blob/master/docs/4_Callbacks_on_futures.md)
 5. [Comparing Java and Scala Futures](5_Comparing_java_and_scala_futures.md)
 
